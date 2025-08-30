@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto currency website design </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="https://st3.depositphotos.com/5906102/16771/v/450/depositphotos_167717484-stock-illustration-crypto-currency-ethereum-black-and.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">White Papers</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <a href="#" class="btn">EN</a>
+        </nav>
+        <div class="content">
+            <h1>BUY & <br>SELL <span>CRYPTO COINS</span></h1>
+            <P>World's Biggest crypto currency exchange available on web <br> well as mobile phones, and the most secure crypto trading platform</P>
+            <a href="#" class="btn">EXPLORE MORE</a>
+        </div>
+
+        <div class="coin-list">
+            <div class="coin">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSEEUJQPS_ARZeaL2PTiA5K0qDjwFzMoVQA&s">
+                <div>
+                    <h3 id="btc-price">$00.00</h3>
+                    <p>Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="https://img.freepik.com/premium-vector/official-logo-ethereum-eth-coin_594726-37.jpg?semt=ais_hybrid&w=740&q=80">
+                <div>
+                    <h3 id="eth-price">$00.00</h3>
+                    <p>Ethereum</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="https://www.shutterstock.com/image-vector/litecoin-symbol-vector-illustration-ltc-260nw-1806389452.jpg">
+                <div>
+                    <h3 id="ltc-price">$00.00</h3>
+                    <p>Litecoin</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAkX6MSC5JnNIBeI2vw2YmeCQNDq1uxyJ1w&s">
+                <div>
+                    <h3 id="xrp-price">$00.00</h3>
+                    <p>Ripple</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Shyamli/Dogecoin.png">
+                <div>
+                    <h3 id="doge-price">$00.00</h3>
+                    <p>Doge</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        async function loadPrices() {
+            try {
+                let response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,litecoin,ripple,dogecoin&vs_currencies=usd");
+                let data = await response.json();
+
+                document.getElementById("btc-price").innerText = "$" + data.bitcoin.usd;
+                document.getElementById("eth-price").innerText = "$" + data.ethereum.usd;
+                document.getElementById("ltc-price").innerText = "$" + data.litecoin.usd;
+                document.getElementById("xrp-price").innerText = "$" + data.ripple.usd;
+                document.getElementById("doge-price").innerText = "$" + data.dogecoin.usd;
+
+            } catch (error) {
+                console.error("Error fetching prices:", error);
+            }
+        }
+
+        // run on page load
+        loadPrices();
+        // refresh every 1 minute
+        setInterval(loadPrices, 60000);
+        </script>
+    </div>
+</body>
+</html>

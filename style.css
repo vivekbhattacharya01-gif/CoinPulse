@@ -1,0 +1,305 @@
+/* 🌍 Global Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🖼️ Background container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/3c/5f/3a/3c5f3a2d60229f9ebfcbfd3eaa59c285.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 7%;
+    color: #fff;
+    backdrop-filter: blur(2px); /* subtle soft look */
+}
+
+/* 🧭 Navbar Styling */
+nav {
+    width: 100%;
+    height: 90px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 🎯 even spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px); /* ✨ glassmorphism */
+    background: rgba(0, 0, 0, 0.55); /* semi-transparent */
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav:hover {
+    border-color: rgba(255, 150, 11, 0.7);
+}
+
+/* 🪙 Logo */
+.logo {
+    width: 80px; /* 🎯 cleaner size */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 0;
+}
+.logo:hover {
+    transform: rotate(10deg) scale(1.05); /* ✨ subtle animation */
+}
+
+/* 🧾 Menu List */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 19px;
+    gap: 35px;
+}
+
+/* 🔗 Menu Items */
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding: 12px 5px;
+}
+
+/* ✨ Underline Hover Animation */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #f0c040, #ff8800);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0c040;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* 🧃 Call to Action Button */
+nav .btn {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #f0c040, #ff8800);
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(255, 200, 80, 0.5);
+    transition: all 0.3s ease;
+}
+nav .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 200, 80, 0.8);
+}
+
+.content{
+    padding: 50px 0;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.content h1{
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.content p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+
+.content h1 span{
+    color: #ff960b;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.content p{
+    line-height: 28px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.content .btn{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 16px 40px; /* bigger size */
+    border-radius: 50px; /* pill shape */
+    background: linear-gradient(135deg, #ff960b, #ff5500); /* stronger gradient */
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px rgba(255, 150, 11, 0.6), 
+                0 0 40px rgba(255, 150, 11, 0.4); /* glowing effect */
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* hover animation */
+.content .btn:hover {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: 0 0 30px rgba(255, 150, 11, 0.9), 
+                0 0 60px rgba(255, 150, 11, 0.6);
+}
+
+/* ✨ shimmer light effect */
+.content .btn:active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    from {
+        width: 10px;
+        height: 10px;
+        opacity: 0.7;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.content .btn:hover::after {
+    left: 100%;
+}
+
+.coin-list{
+    position: relative;
+    margin-top: 0px;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+.coin {
+    background: rgba(255, 255, 255, 0.05); /* soft card background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+    color: #fff;
+    width: 150px;   /* consistent card size */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    cursor: pointer;
+    flex: 1 1 160px;   /* ✅ flexible width */
+    max-width: 200px;  /* limit max size */
+    min-width: 140px;  /* limit min size */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.coin:nth-child(1) { animation-delay: 0.1s; }
+.coin:nth-child(2) { animation-delay: 0.2s; }
+.coin:nth-child(3) { animation-delay: 0.3s; }
+.coin:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.coin:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: rgba(255, 150, 11, 0.1);
+    box-shadow: 0 8px 25px rgba(255, 150, 11, 0.8),
+                0 0 20px rgba(255, 150, 11, 0.6);
+    border-color: #ff960b;
+}
+
+.coin img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+    border-radius: 90%;
+}
+
+.coin:hover img {
+    transform: rotate(5deg) scale(1.1); /* slight spin & zoom */
+}
+
+.coin h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff960b;
+}
+
+.coin p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .coin {
+        width: 140px;
+        padding: 20px 15px;
+    }
+
+    .coin img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .coin h3 {
+        font-size: 16px;
+    }
+
+    .coin p {
+        font-size: 12px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
