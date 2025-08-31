@@ -34,9 +34,11 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 
 ## 🎥 Live Demo
 
-![CoinPulse Animation](https://github.com/vivekbhattacharya01-gif/CoinPulse/blob/main/CoinPulse-demo.mp4)
+### 🔹 GIF Preview
+![CoinPulse Animation](https://github.com/vivekbhattacharya01-gif/CoinPulse/blob/main/CoinPulse%20Gif.gif?raw=true)
 
-▶️ [Watch the video](https://github.com/vivekbhattacharya01-gif/CoinPulse/blob/main/CoinPulse-demo.mp4)
+### 🔹 Full Video
+https://github.com/vivekbhattacharya01-gif/CoinPulse/blob/main/demo.mp4
 
 ---
 
