@@ -29,10 +29,7 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 
 ## 📸 Preview  
 
-![CoinPulse Screenshot](<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/cddfcb49-c2b6-4615-80b1-48e833e74ce7" />)  
-<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/cddfcb49-c2b6-4615-80b1-48e833e74ce7" />
-
-*(Add your project screenshot here — take it with Snipping Tool and save as `screenshot.png` in repo)*  
+![CoinPulse Screenshot](<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/cddfcb49-c2b6-4615-80b1-48e833e74ce7" />) 
 
 ---
 
