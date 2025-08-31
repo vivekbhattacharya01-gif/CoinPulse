@@ -1,4 +1,4 @@
-# CoinPulse
+<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/92ef3e7d-c959-4b96-9259-9baab3567f96" /># CoinPulse
 CoinPulse  is a modern and responsive cryptocurrency tracking platform that showcases live market prices of popular coins like Bitcoin, Ethereum, Litecoin, Ripple, and Dogecoin.  The project is built with HTML, CSS, and JavaScript (API-powered) to provide real-time updates and an interactive user experience.
 
 # 🚀 CoinPulse  
@@ -29,7 +29,7 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 
 ## 📸 Preview  
 
-![CryptoPulse Screenshot](./screenshot.png)  
+![CoinPulse Screenshot](<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/cddfcb49-c2b6-4615-80b1-48e833e74ce7" />)  
 <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/cddfcb49-c2b6-4615-80b1-48e833e74ce7" />
 
 *(Add your project screenshot here — take it with Snipping Tool and save as `screenshot.png` in repo)*  
