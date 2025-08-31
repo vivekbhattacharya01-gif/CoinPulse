@@ -38,5 +38,5 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/cryptopulse.git
-   cd cryptopulse
+git clone https://github.com/vivekbhattacharya01-gif/CoinPulse.git
+cd CoinPulse
