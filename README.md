@@ -36,7 +36,7 @@ Built with **HTML, CSS, and JavaScript** using the [CoinGecko API](https://www.c
 
 ### 🔹 GIF Preview
 
-![LumiGate Animation](https://github.com/vivekbhattacharya01-gif/LumiGate/blob/main/LumiGate.gif?raw=true)
+![CoinPulse Animation](CoinPulse GIF.gif)
 
 [<video src="./images/lumigate-demo.mp4" width="500" autoplay loop muted></video>](https://github.com/vivekbhattacharya01-gif/LumiGate/blob/main/LumiGate.gif?raw=true)
 ![CoinPulse Animation](https://github.com/vivekbhattacharya01-gif/CoinPulse/blob/main/CoinPulse%20Gif.gif?raw=true)
